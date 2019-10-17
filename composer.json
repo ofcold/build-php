@@ -1,7 +1,6 @@
 {
 	"name": "ofcold/creation",
 	"description": "Build your php composer app.",
-	"type": "project",
 	"license": "MIT",
 	"authors": [
 		{
@@ -14,8 +13,19 @@
 			"Ofcold\\Creation\\": "src/"
 		}
 	},
+	"bin": [
+		"creation"
+	],
 	"require": {
 		"php": ">=7.3",
 		"symfony/console": "^4.3"
-	}
+	},
+	"require-dev": {
+		"phpunit/phpunit": "^8.0"
+	},
+	"config": {
+		"sort-packages": true
+	},
+	"minimum-stability": "dev",
+	"prefer-stable": true
 }
