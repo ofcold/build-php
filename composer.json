@@ -1,0 +1,21 @@
+{
+	"name": "ofcold/creation",
+	"description": "Build your php composer library.",
+	"type": "project",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Bill Li",
+			"email": "bill.li@ofcold.com"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"Ofcold\\BuildPHP\\": "src/"
+		}
+	},
+	"require": {
+		"php": ">=7.3",
+		"symfony/console": "^4.3"
+	}
+}
