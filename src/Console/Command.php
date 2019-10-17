@@ -75,6 +75,7 @@ trait Command
 	public function ask($question)
 	{
 		$question = '<comment>'.$question.'</comment> ';
+
 		$question = new Question($question);
 
 		return $this->getHelperSet()->get('question')->ask($this->input, $this->output, $question);
@@ -92,7 +93,9 @@ trait Command
 	public function confirmTaskWithUser($task, $question)
 	{
 		$question = $question === true ? 'Are you sure you want to run the ['.$task.'] task?' : (string) $question;
+
 		$question = '<comment>'.$question.' [y/N]:</comment> ';
+
 		$question = new ConfirmationQuestion($question, false);
 
 		return $this->getHelperSet()->get('question')->ask($this->input, $this->output, $question);
