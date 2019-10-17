@@ -1,2 +1,16 @@
 #!/usr/bin/env php
 <?php
+
+
+// Register The Composer Auto Loader
+require __DIR__.'/vendor/autoload.php';
+
+
+use Ofcold\Creation\Application;
+
+$application = new Application();
+
+// Register commands
+// $application->add(new GenerateAdminCommand());
+
+$application->run();
