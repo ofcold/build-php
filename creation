@@ -7,10 +7,11 @@ require __DIR__.'/vendor/autoload.php';
 
 
 use Ofcold\Creation\Application;
+use Ofcold\Creation\Console\MakeAppCommand;
 
 $application = new Application();
 
 // Register commands
-// $application->add(new GenerateAdminCommand());
+$application->add(new MakeAppCommand());
 
 $application->run();

@@ -1,6 +1,6 @@
 {
 	"name": "ofcold/creation",
-	"description": "Build your php composer library.",
+	"description": "Build your php composer app.",
 	"type": "project",
 	"license": "MIT",
 	"authors": [
@@ -11,7 +11,7 @@
 	],
 	"autoload": {
 		"psr-4": {
-			"Ofcold\\BuildPHP\\": "src/"
+			"Ofcold\\Creation\\": "src/"
 		}
 	},
 	"require": {
